@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.Interfacebuilder3.CocoaToach.Storyboard.XIB" version="3.0"
+          toolsVersion="18122" targetRuntime="iOS.CocoaTouch"
+          propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" >
+          userTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <scenes> 
+     <!-- REP Login View Controller --> 
+     <scene sceneID="REP-Scene">
+           <objects>
+              <viewController id="REPLoginVC" customClass="REPLoginViewController"
+                              customModuleProvider="target"
+                              sceneMemberID="viewController">
+                 <view key="view" contentMode="scaleToFill" id="REPView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="869"/>
+                    <subviews>
+                      <imageView contentMode="scaleAspectFit" id="logoImage">
+                        <rect key="frame" x="100" y="80" width="214" height="120"/>
+                        <image name="Logo"/> 
+                      </imageView>
+                      <textField placeholder="Email" contentType="emailAddress" id="emailTextField"
+                        <rect key="frame" x="50" y="220" width="314" height="40"/>
+                      </textField>
+                      <textField placeholder="password" securTextEntry="YES" id="passwordTextField">
+                        <rect key="frame" x="50" y="280" width="314" height="40"/>
+                      </textField>
+                      <button title="Login to R.E.P" id="loginButton">
+                        <rect key="frame" x="100" y="340" width="214" height="44"/>
+                      </button>
+                   </subviews>
+                   <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <connections>
+                   <outlet property="emailTextField" destination="emailTextField" id="emailOutlet"/>
+                   <outlet property="passwordTextField" destination="passwordTextField" id="passwordOutlet"/>
+                   <outlet property="loginButton" destination="loginButton" id="loginOutlet"/>
+                   <outlet property="logoImageView" destination="logoImage" id="logoOutlet"/>
+                   <action selector="logoinTapped:" destination="REPLoginVC" eventType="touchUpInside" id="loginAction"/>
+                </connections>
+              </viewController>
+              <placeholder placeholderIdentifier="IBFirstRespoonder" id="REP-firstResponder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+           </objects>
+    </scene>
+  </scenes>
+</document>
+
+            
+
+
